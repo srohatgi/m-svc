@@ -2,9 +2,7 @@
 
 microservice with mongodb in the backend
 
-## dev environment setup ##
-
-On your Mac:
+## dev environment setup - mac ##
 
 1. Install [VirtualBox](https://www.virtualbox.org/)
 2. Install [Vagrant](https://www.vagrantup.com/)
