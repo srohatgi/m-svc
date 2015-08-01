@@ -29,11 +29,16 @@ targetCompatibility = 1.8
 dependencies {
     compile("org.springframework.boot:spring-boot-starter-web")
     compile("org.springframework.boot:spring-boot-starter-data-mongodb")
+    compile("org.slf4j:slf4j-parent:1.7.12")
     testCompile("org.springframework.boot:spring-boot-starter-test")
 }
 
 task wrapper(type: Wrapper) {
     gradleVersion = '2.3'
+}
+
+bootRun {
+    jvmArgs = ["-Dlog.directory=.", "-Dlog.media=STDOUT"]
 }
 
 group = 'srohatgi'
