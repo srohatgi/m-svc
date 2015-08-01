@@ -13,5 +13,7 @@ microservice with mongodb in the backend
 Run following commands on your terminal
 
     $ git clone https://github.com/srohatgi/m-svc
-    $ cd m-svc
-    $ gradle run
+    $ cd m-svc/env; vagrant up; cd -
+    $ cd m-svc; gradle run
+    
+Navigate to `http://localhost:8080/api/people` in your browser
