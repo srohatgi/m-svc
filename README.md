@@ -10,5 +10,10 @@ On your Mac:
 2. Install [Vagrant](https://www.vagrantup.com/)
 3. Install [JDK 8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 4. Install [gradle](https://gradle.org/gradle-download/)
-5. `$ git clone https://github.com/srohatgi/m-svc`
-6. `$ gradle run`
+
+
+Run following commands on your terminal
+
+    $ git clone https://github.com/srohatgi/m-svc
+    $ cd m-svc
+    $ gradle run
