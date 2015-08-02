@@ -18,7 +18,7 @@ import static org.springframework.data.mongodb.core.query.Criteria.where;
  */
 public interface PersonRepository extends MongoRepository<Person, String> {
 
-    public Person findByFirstName(String firstName);
-    public List<Person> findByLastName(String lastName);
+    Person findByFirstName(String firstName);
+    List<Person> findByLastName(String lastName);
 
 }

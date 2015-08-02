@@ -36,6 +36,8 @@ dependencies {
     compile('org.webjars:bootstrap:3.3.5')
     compile('org.webjars:jquery:2.1.4')
     compile('org.webjars:backbonejs:1.2.1')
+    compile('org.webjars:underscorejs:1.8.3')
+    compile('org.webjars:backbone-localstorage:1.1.0')
 
     testCompile("org.springframework.boot:spring-boot-starter-test")
 }
