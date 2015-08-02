@@ -1,6 +1,8 @@
 package com.intocloudtech.controllers.web;
 
 import com.intocloudtech.domain.Person;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,6 +18,8 @@ import javax.validation.Valid;
 @Controller
 public class WebController extends WebMvcConfigurerAdapter {
 
+    private static Logger logger = LoggerFactory.getLogger(WebController.class);
+
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {
         registry.addViewController("/results").setViewName("results");
@@ -23,6 +27,7 @@ public class WebController extends WebMvcConfigurerAdapter {
 
     @RequestMapping(value="/", method=RequestMethod.GET)
     public String showForm(Person person) {
+        logger.debug("inside showForm");
         return "form";
     }
 
