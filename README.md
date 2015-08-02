@@ -1,6 +1,6 @@
 # m-svc #
 
-microservice with mongodb in the backend
+login web-application and a micro-service api running on top of mongodb
 
 ## dev environment setup - mac ##
 
@@ -9,11 +9,12 @@ microservice with mongodb in the backend
 3. Install [jdk 8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 4. Install [gradle](https://gradle.org/gradle-download/)
 
+## running on mac laptop ##
 
-Run following commands on your terminal
+In your terminal (preferably using [iTerm 2](https://www.iterm2.com/))
 
-    $ git clone https://github.com/srohatgi/m-svc
-    $ cd m-svc/env; vagrant up; cd -
-    $ cd m-svc; gradle run
+    $ git clone https://github.com/srohatgi/m-svc; cd m-svc
+    $ cd env; vagrant up; cd -
+    $ gradle bRun
     
 Navigate to `http://localhost:8080/api/people` in your browser
