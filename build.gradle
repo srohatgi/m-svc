@@ -31,6 +31,9 @@ dependencies {
     compile("org.springframework.boot:spring-boot-starter-data-mongodb")
     compile("org.springframework.boot:spring-boot-starter-thymeleaf")
     compile("org.slf4j:slf4j-parent:1.7.12")
+
+    // webjars
+    compile('org.webjars:bootstrap:3.3.5')
     testCompile("org.springframework.boot:spring-boot-starter-test")
 }
 
