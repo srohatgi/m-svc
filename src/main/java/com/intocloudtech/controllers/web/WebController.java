@@ -20,10 +20,12 @@ public class WebController extends WebMvcConfigurerAdapter {
 
     private static Logger logger = LoggerFactory.getLogger(WebController.class);
 
+    /*
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {
         registry.addViewController("/results").setViewName("results");
     }
+    */
 
     @RequestMapping(value="/", method=RequestMethod.GET)
     public String showForm(Person person) {
@@ -31,6 +33,7 @@ public class WebController extends WebMvcConfigurerAdapter {
         return "form";
     }
 
+    /*
     @RequestMapping(value="/", method= RequestMethod.POST)
     public String checkPersonInfo(@Valid Person person, BindingResult bindingResult) {
         if (bindingResult.hasErrors()) {
@@ -38,5 +41,6 @@ public class WebController extends WebMvcConfigurerAdapter {
         }
         return "redirect:/results";
     }
+    */
 
 }
