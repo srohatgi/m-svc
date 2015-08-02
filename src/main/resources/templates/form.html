@@ -2,7 +2,8 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout">
 <head>
     <meta charset="UTF-8"/>
-    <title></title>
+    <link href="webjars/bootstrap/3.3.5/css/bootstrap.min.css"/>
+    <title>home</title>
 </head>
 <body>
 <form action="#" th:action="@{/}" th:object="${person}" method="post">
@@ -27,5 +28,13 @@
         </tr>
     </table>
 </form>
+<script src="webjars/jquery/2.1.4/jquery.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('form').animate({
+            fontSize: '48px'
+        }, "slow");
+    });
+</script>
 </body>
 </html>
