@@ -17,4 +17,4 @@ In your terminal (preferably using [iTerm 2](https://www.iterm2.com/))
     $ cd env; vagrant up; cd -
     $ gradle bRun
     
-Navigate to `http://localhost:8080/api/people` in your browser
+Navigate to [http://localhost:8080/api/people](http://localhost:8080/api/people) in your browser
