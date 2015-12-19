@@ -39,6 +39,10 @@ dependencies {
     compile('org.webjars:underscorejs:1.8.3')
     compile('org.webjars:backbone-localstorage:1.1.0')
 
+    // swagger
+    compile("io.springfox:springfox-swagger2:2.1.1")
+    compile('io.springfox:springfox-swagger-ui:2.1.1')
+
     testCompile("org.springframework.boot:spring-boot-starter-test")
 }
 
